@@ -1,0 +1,35 @@
+
+// Here we can add our overrides to the bootstrap !default values. If this file is empty bootstrap goes default.
+@import '_bootstrap-overrides';
+
+// Here we include the main (and original) boostrap.scss which in its turn imports the entire library.
+@import 'bootstrap_original/bootstrap';
+
+//added mixins
+@import '_mixins-animate';
+@import '_mixins-shadows';
+
+// Include basic style t.ex. for body, links decoration, :selection etc
+@import '_basic_style';
+
+@import '_navbar';
+
+@import '_footer';
+@import '_cardsStartPage';
+
+@import '_highscorePage';
+
+@import '_turnDevice';
+
+@import '_startpage';
+@import '_rulespage';
+@import '_winModal.scss';
+
+// Game Page CSS
+@import '_gamePage';
+@import '_playerOptionPage';
+@import '_toggleAudioBtn';
+
+
+
+

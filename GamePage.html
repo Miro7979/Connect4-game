@@ -1,0 +1,35 @@
+<div>
+  <div class="mt-3">
+    <h1>V<span>å</span>rt spel</h1>
+  </div>
+  <section class="container game-holder pt-5 mt-5 mb-md-5">
+    <div class="row">
+
+      ${this.gameBoard.active ? this.savedSession : ''}
+      ${this.playersOptions.active ? '' : `
+      <div class="playerButtons col-6">
+          
+        <button type="button" class="btn btn-primary btn-ml abortGameButton">Avbryt Spelet</button>
+        ${this.restartBtn}
+        ${this.gameBoard.toggleAudioBtn}
+      </div>
+      `}
+    </div>
+
+    ${this.playersOptions.active ? this.playersOptions : ''}
+    ${this.gameBoard.active ? this.gameBoard : ''}
+
+
+    <!-- buttons -->
+
+    ${this.gameBoard.active ? '' : `
+
+    <div class="col-12">
+      <button type="button" class="btn btn-primary btn-ml mb-5 mx-auto startGameButton">Starta Spelet</button>
+    </div>
+    `}
+  </section>
+  ${this.modal}
+
+
+</div>
